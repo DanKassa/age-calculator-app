@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; padding: 20px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="container">
+<div class="date_container">
+  <!-- Date Picker -->
+  
+  <div class="day_container">
+  <p id="dayP">Day</p> 
+  <input type="number" placeholder="DD" id="date">
+  <p id="invalid_id_day"></p>
+</div>
+
+<div class="month_container">
+  <p id="monthP">Month</p>
+  <input type="number" placeholder="MM" id="month">
+  <p id="invalid_id_month"></p>
+</div>
+
+<div class="year_container">
+  <p id="yearP">Year</p>
+  <input type="number" placeholder="YYYY" id="year" onkeypress="checkEnter(event)" />
+  <p id="invalid_id_year"></p>
+</div>
+
+</div>
+
+<div class="line_container">
+<hr width="330px" class="horizontal_line" >
+<div class="arrow_container"><img src="./assets/images/icon-arrow.svg" alt="Arrow image"></div>
+</div>
+
+<div class="age_container">
+  <h1><span id="slash_1">--</span> years</h1>
+  <h1> <span id="slash_2">--</span> months</h1>
+  <h1><span id="slash_3">--</span> days</h1>
+</div>
+
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/DanKassa" target="_blank">Dan Kassa</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
